@@ -21,33 +21,32 @@ public class WebStepTest {
     @DisplayName("Проверка issue на github")
     @Test
 
-
         @Step("Открыть главную страницу")
             public void openMainPage() {
         open("https://github.com/");
-    }
+    };
 
         @Step("Найти репозиторий")
                 public void searchRepository() {
             $(".header-search-input").click();
             $(".header-search-input").setValue(REPOSITORY);
             $(".header-search-input").pressEnter();
-        }
+        };
 
         @Step("Открыть репозиторий")
                 public void openRepository() {
             $(linkText(REPOSITORY)).click();
-        }
+        };
 
         @Step("Кликнуть на таб Issue")
                 public void clickOnTab() {
             $(partialLinkText("Issue")).click();
-        }
+        };
 
         @Step("Найти Issue по названию")
                 public void searchByTitle() {
             $(partialLinkText("С Новым Годом")).click();
-        }
+        };
 
         @Step("Сравнить результат")
                 public void resultTest() {
