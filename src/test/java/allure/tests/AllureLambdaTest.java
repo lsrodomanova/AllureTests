@@ -47,7 +47,6 @@ public class AllureLambdaTest {
 
         step("Сравнить результат", () -> {
             $(".markdown-title").shouldHave(text(TITLE));
-
         });
     }
 }
