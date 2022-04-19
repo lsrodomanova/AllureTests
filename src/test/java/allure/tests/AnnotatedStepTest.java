@@ -24,7 +24,4 @@ public class AnnotatedStepTest {
         steps.searchByTitle(TITLE);
         steps.resultTest(TITLE);
     }
-
-
-
 }

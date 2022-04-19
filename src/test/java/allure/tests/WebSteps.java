@@ -20,8 +20,7 @@ public class WebSteps {
                 public void searchRepository(String repo) {
             $(".header-search-input").click();
             $(".header-search-input").setValue(repo);
-            $(".header-search-input").pressEnter();
-        };
+            $(".header-search-input").pressEnter();};
 
         @Step("Открыть репозиторий {repo}")
                 public void openRepository(String repo) {

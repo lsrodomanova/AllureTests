@@ -27,8 +27,5 @@ public class AllureSelenideTest {
         $(partialLinkText("С Новым Годом")).click();
 
         $(".markdown-title").shouldHave(text("С Новым Годом"));
-
-
-
     }
 }
